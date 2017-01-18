@@ -108,18 +108,18 @@ public class LessonThreeFragment extends HtmlFragment {
 
         if (canDisplayMap) {
             // If we have a map, then display these markers as pins
-            final GoogleMap map = mapFragment.getMap();
-
-            // remove previous markers
-            map.clear();
-
-            // add markers for locations returned by the server
-            for (final MarkerOptions loc: locations) {
-                map.addMarker(loc);
-            }
-
-            // Move the camera to our location
-            map.moveCamera(CameraUpdateFactory.newLatLngZoom(MY_POSITION, 4));
+//            final GoogleMap map = mapFragment.getMap();
+//
+//            // remove previous markers
+//            map.clear();
+//
+//            // add markers for locations returned by the server
+//            for (final MarkerOptions loc: locations) {
+//                map.addMarker(loc);
+//            }
+//
+//            // Move the camera to our location
+//            map.moveCamera(CameraUpdateFactory.newLatLngZoom(MY_POSITION, 4));
         } else {
             // Otherwise show a list of locations
             final ListView list = listFragment.getList();
